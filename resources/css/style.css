@@ -20,6 +20,7 @@ header {
     /*display: inline-flex;
     justify-content: space-around;
     align-items: center;*/
+    opacity: 0.99;
 }   
 
 header img {
@@ -34,7 +35,7 @@ header img {
     height: 60px;
 }
 
-ul {
+header ul {
     position: absolute;
     top: -300px;
     right: 0px;
@@ -53,7 +54,7 @@ ul {
     transition: all 150ms ease-in 100ms;
 }
 
-ul:hover {
+header ul:hover {
     position: absolute;
     top: 0px;
     right: 0px;
@@ -240,9 +241,65 @@ a:active {
 }
 
 #touren {
-    background-color: red;
-    height: 50px;
+    color: black;
+    height: fit-content;
+    justify-content: space-evenly;
+    margin: 20px 5%;
 }
+
+#touren h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 100;
+    line-height: 50px;
+    padding-top: 120px;
+    padding-bottom: 50px;
+}
+
+.Tourenpics {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Tourenpics img {
+    width: 30%;
+}
+
+.Texttouren {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Tourbox {
+    width: 50%;
+    height: 200px;  
+    background-color: white;
+    border: 2px solid red;
+    margin: 50px 2%;
+    padding: 15px;
+    color: red;
+    overflow: scroll;
+}
+
+.Tourliste {
+    width: 50%;
+    height: 200px;  
+    background-color: red;
+    margin: 10px 2%;
+    padding: 15px;
+    overflow: scroll;
+}
+
+.Tourliste ul {
+    font-size: 18px;
+    color: black;
+    list-style-type: none;
+    line-height: 26px;
+}
+
 
 #misc {
     background-color: gold;
