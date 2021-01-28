@@ -66,6 +66,17 @@ header ul:hover {
     opacity: 1;
 }
 
+@media only screen and (max-width: 800px) {
+    .burger {
+        display: none;
+    }
+
+    header ul {
+        display: none;
+    }
+}
+
+
 
 .home {
     padding-top: 125px;
@@ -146,6 +157,7 @@ header ul:hover {
     padding: 0;
 }
 
+
 .boxwerkstatt a {
     display: block;
     font-weight: 100;
@@ -199,7 +211,6 @@ header ul:hover {
     text-transform: uppercase;
 }
 
-
 a:link {
     color: white; 
     background-color: transparent; 
@@ -224,6 +235,137 @@ a:active {
     color: white;
     background-color: transparent;
 }
+
+@media only screen and (max-width: 800px) {
+
+    .home {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        margin:0 5% 0 5%;
+    }
+
+    .line {
+        display: inline-flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-flow: column;
+        margin: 5%;
+    }
+
+    .oben {
+        width: 50%;
+        justify-content: center;
+        align-items: space-around;
+    }
+    
+    .unten {
+        width: 50%;
+        justify-content: center;
+        align-items: space-around;
+    }
+
+    .boxwerkstatt {
+        margin: 5%;
+        width: 80%;
+        background-color: darkblue;
+        height:fit-content;
+    }
+    
+    .boxtouren {
+        margin: 10%;
+        background-color: red;
+        text-align: center;
+        height: fit-content;
+    }
+    
+    .boxmisc {
+        margin: 10%;
+        background-color: gold;
+        height: fit-content;
+    }
+    
+    .boxwandhalterung {
+        margin: 10% 5% 5% 5%;
+        background-color: darkred;
+        height: fit-content;
+    }
+    
+    .boxbikes {
+        margin: 10%;
+        background-color: green;
+        height: fit-content;
+        width: 80%;
+    }
+    
+    .boxelias {
+        margin: 10%;
+        background-color: blue;
+        height: fit-content;
+    }    
+
+    .boxwerkstatt a {
+        display: block;
+        font-weight:lighter;
+        font-size: 50px;    
+        text-align: center;
+        margin: auto auto;
+        text-transform: uppercase;
+        padding: 10%;
+    }
+    
+    .boxtouren a {
+        display: block;
+        font-weight:lighter;
+        font-size: 30px;    
+        text-align: center;
+        margin: auto auto;
+        text-transform: uppercase;
+        padding: 10%;
+    }
+    
+    .boxmisc a {
+        display: block;
+        font-weight:lighter;
+        font-size: 20px;    
+        text-align: center;
+        margin: auto auto;
+        text-transform: uppercase;
+        padding: 3%;
+    }
+    
+    .boxwandhalterung a {
+        display: block;
+        font-weight:lighter;
+        font-size: 40px;    
+        text-align: center;
+        margin: auto auto;
+        text-transform: uppercase;
+    }
+    
+    .boxbikes a {
+        display: block;
+        font-weight:lighter;
+        font-size: 50px;    
+        text-align: center;
+        margin: auto auto;
+        text-transform: uppercase;
+        padding-top: 30%;
+    }
+    
+    .boxelias a {
+        display: block;
+        font-weight:lighter;
+        font-size: 30px;    
+        text-align: center;
+        margin: auto auto;
+        text-transform: uppercase;
+        padding: 10%;
+    }
+
+
+}
+
 
 .sections h1 {
     text-align: center;
@@ -336,6 +478,56 @@ a:active {
     line-height: 26px;
 }
 
+@media only screen and (max-width: 800px) {
+    
+    .Tourenpics {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items:center;
+    }
+    
+    .Tourenpics img {
+        width: 85%;
+        margin: 5%;
+    }
+
+    .Texttouren {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .Tourbox {
+        width: 80%;
+        height: 200px;  
+        background-color: white;
+        border: 2px solid red;
+        margin: 25px;
+        padding: 15px;
+        color: red;
+        overflow: scroll;
+    }
+    
+    .Tourliste {
+        width: 80%;
+        height: 200px;  
+        background-color: red;
+        margin: 10px 2%;
+        padding: 15px;
+        overflow: scroll;
+    }
+    
+    .Tourliste ul {
+        font-size: 18px;
+        color: black;
+        list-style-type: none;
+        line-height: 26px;
+
+
+}
+
 
 #misc {
     background-color: gold;
@@ -372,3 +564,32 @@ a:active {
     width: 100%;
 }
 
+@media only screen and (max-width: 800px) {
+    #location {
+        height: fit-content;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-evenly;
+        margin: 20px 10%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .textboxlocation {
+        background-color: green;
+        width: 100%;
+        padding: 15px;
+        font-size: 25px;
+        font-weight: 100;
+    }
+    
+    .map {
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+    .map img {
+        width: 100%;
+    }
+
+}
