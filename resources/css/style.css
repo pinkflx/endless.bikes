@@ -20,7 +20,7 @@ header {
     /*display: inline-flex;
     justify-content: space-around;
     align-items: center;*/
-    opacity: 0.99;
+    /*opacity: 0.99;*/
 }   
 
 header img {
@@ -225,6 +225,16 @@ a:active {
     background-color: transparent;
 }
 
+.sections h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 100;
+    line-height: 50px;
+    padding-top: 120px;
+    padding-bottom: 50px;
+}
+
 #werkstatt {
     background-color: darkblue;
     height: 50px;
@@ -237,7 +247,33 @@ a:active {
 
 #wandhalterung {
     background-color: darkred;
-    height: 50px;
+    height: fit-content;
+    margin: 20px 5%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headline {
+    background-color: darkred;
+}
+
+.wandpic {
+    width: 80%;
+    padding-bottom: 30px;
+}
+
+.wandtext {
+    width: 80%;
+    font-weight: 100;
+    padding-bottom: 50px;
+    line-height: 26px;
+}
+
+ 
+#wandhalterung img {
+    width: 100%;
 }
 
 #touren {
