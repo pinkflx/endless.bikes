@@ -241,12 +241,12 @@ a:active {
         display: flex;
         justify-content: space-around;
         align-items: flex-start;
-        margin:0 5% 0 5%;
+        width: 100%;
     }
 
     .line {
         display: inline-flex;
-        justify-content: space-around;
+        justify-content:space-around;
         align-items: center;
         flex-flow: column;
         margin: 5%;
@@ -272,45 +272,50 @@ a:active {
     }
     
     .boxtouren {
-        margin: 10%;
+        margin: 20% 10%;
         background-color: red;
         text-align: center;
         height: fit-content;
+        width: fit-content;
     }
     
     .boxmisc {
         margin: 10%;
         background-color: gold;
         height: fit-content;
+        width: fit-content;
     }
     
     .boxwandhalterung {
-        margin: 10% 5% 5% 5%;
+        margin: 20% 5% 5% 5%;
         background-color: darkred;
         height: fit-content;
+        width: fit-content;
+
     }
     
     .boxbikes {
-        margin: 10%;
+        margin: 30% 0%;
         background-color: green;
         height: fit-content;
-        width: 80%;
+        width: 95%;
     }
     
     .boxelias {
-        margin: 10%;
+        margin: 20% 0%;
         background-color: blue;
         height: fit-content;
+        width: fit-content;
     }    
 
     .boxwerkstatt a {
         display: block;
         font-weight:lighter;
-        font-size: 50px;    
-        text-align: center;
+        font-size: 40px;    
+        text-align: left;
         margin: auto auto;
         text-transform: uppercase;
-        padding: 10%;
+        padding: 10% 10% 10% 0;
     }
     
     .boxtouren a {
@@ -336,26 +341,27 @@ a:active {
     .boxwandhalterung a {
         display: block;
         font-weight:lighter;
-        font-size: 40px;    
+        font-size: 20px;
         text-align: center;
         margin: auto auto;
         text-transform: uppercase;
+        padding: 20px 0 20px 0;
     }
     
     .boxbikes a {
         display: block;
         font-weight:lighter;
-        font-size: 50px;    
-        text-align: center;
+        font-size: 30px;    
+        text-align: right;
         margin: auto auto;
         text-transform: uppercase;
-        padding-top: 30%;
+        padding: 30% 5px 0px 15px;
     }
     
     .boxelias a {
         display: block;
         font-weight:lighter;
-        font-size: 30px;    
+        font-size: 20px;    
         text-align: center;
         margin: auto auto;
         text-transform: uppercase;
