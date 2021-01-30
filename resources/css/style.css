@@ -256,56 +256,78 @@ a:active {
         width: 50%;
         justify-content: center;
         align-items: space-around;
+        margin: 0;
     }
     
     .unten {
         width: 50%;
         justify-content: center;
         align-items: space-around;
+        margin: 0;
     }
 
     .boxwerkstatt {
-        margin: 5%;
+        /*margin: 5%;*/
+        margin: 10% 0;
         width: 80%;
+        height: 140px;
         background-color: darkblue;
-        height:fit-content;
     }
     
     .boxtouren {
-        margin: 20% 10%;
+        /*margin: 20% 10%;*/
+        margin: 10% 0;
+
         background-color: red;
         text-align: center;
-        height: fit-content;
-        width: fit-content;
+        /*height: fit-content;
+        width: fit-content;*/
+        width: 80%;
+        height: 140px;
     }
     
     .boxmisc {
-        margin: 10%;
+        /*margin: 10%;*/
+        margin: 10% 0;
+
         background-color: gold;
-        height: fit-content;
-        width: fit-content;
+        /*height: fit-content;
+        width: fit-content;*/
+        width: 80%;
+        height: 140px;
     }
     
     .boxwandhalterung {
-        margin: 20% 5% 5% 5%;
-        background-color: darkred;
-        height: fit-content;
-        width: fit-content;
+        /*margin: 20% 5% 5% 5%;*/
+        margin: 10% 0;
 
+        background-color: darkred;
+        /*height: fit-content;
+        width: fit-content;*/
+        width: 80%;
+        height: 140px;
     }
     
     .boxbikes {
-        margin: 30% 0%;
+        /*margin: 30% 0%;*/
+        margin: 10% 0;
+
         background-color: green;
-        height: fit-content;
-        width: 95%;
+        /*height: fit-content;
+        width: 95%;*/
+        width: 80%;
+        height: 140px;
     }
     
     .boxelias {
-        margin: 20% 0%;
+        /*margin: 20% 0%;*/
+        margin: 10% 0;
+
         background-color: blue;
-        height: fit-content;
-        width: fit-content;
+        /*height: fit-content;
+        width: fit-content;*/
+        width: 80%;
+        height: 140px;
     }    
 
     .boxwerkstatt a {
@@ -361,11 +383,11 @@ a:active {
     .boxelias a {
         display: block;
         font-weight:lighter;
-        font-size: 20px;    
+        font-size: 25px;    
         text-align: center;
         margin: auto auto;
         text-transform: uppercase;
-        padding: 10%;
+        padding-top: 30%;
     }
 
 
@@ -384,13 +406,179 @@ a:active {
 
 #werkstatt {
     background-color: darkblue;
-    height: 50px;
+    margin: 0 5% 20px 5%;
+    height: fit-content;
+    padding: 5%;
 }
 
-#bikes {
-    background-color: green;
-    height: 50px;
+#werkstatt h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 100;
+    line-height: 50px;
+    padding-top: 90px;
+    padding-bottom: 50px;
 }
+
+#werkstatt img {
+    width: 100%;
+    height: 50%
+}
+
+#werkstatt p {
+    font-size: 18px;
+    font-weight: 100;
+}
+
+#werkstatt a:link {
+    color: white; 
+    background-color: transparent; 
+    text-decoration: underline;
+}       
+
+#werkstatt a:visited {
+    color: white;
+    background-color: transparent;
+  }
+  
+#werkstatt a:hover {
+    color: blue;
+    background-color: white;
+}
+  
+#werkstatt a:active {
+    color: white;
+    background-color: transparent;
+} 
+
+#bikes {
+    /*background-color: green;*/
+    height: fit-content;
+    margin: 20px 5%;
+}
+
+.bikecontainer {
+    /*background-color: green;*/
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.bikeheadline {
+    /*background-color: green;*/
+    color: black;
+}
+
+.bikepic {
+    width: 40%;
+    margin: 0 5% 5% 5%;
+}
+
+.bikepic img {
+    width: 100%;
+}
+
+.biketext {
+    background-color: green;
+    color: white;
+    font-size: 25px;
+    font-weight: 100;
+    overflow: scroll;
+    width: 40%;
+    height: 650px;
+    margin: 0 5% 5% 5%;
+    padding: 0 2%;
+}
+
+.bikegalerie {
+    /*background-color: green;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5% 5% 5%;
+}
+
+.bikegalerie img {
+    width: 22%;
+}
+
+#bikes p {
+    font-size: 18px;
+    font-weight: 100;
+}
+
+#bikes a:link {
+    color: white; 
+    background-color: transparent; 
+    text-decoration: underline;
+}       
+
+#bikes a:visited {
+    color: white;
+    background-color: transparent;
+  }
+  
+#bikes a:hover {
+    color: blue;
+    background-color: white;
+}
+  
+#bikes a:active {
+    color: white;
+    background-color: transparent;
+} 
+
+@media only screen and (max-width: 800px) {
+    .bikecontainer {
+        /*background-color: green;*/
+        display: flex;
+        flex-flow: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 5%;
+    }
+    
+    .bikeheadline {
+        /*background-color: green;*/
+    }
+    
+    .bikepic {
+        width: 100%;
+        margin: 0 5% 5% 5%;
+    }
+    
+    .bikepic img {
+        width: 100%;
+    }
+    
+    .biketext {
+        background-color: green;
+        color: white;
+        font-size: 25px;
+        font-weight: 100;
+        overflow: scroll;
+        width: 100%;
+        height: fit-content;
+        margin: 0 5% 5% 5%;
+    }
+    
+    .bikegalerie {
+        /*background-color: green;*/
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5% 5% 5%;
+    }
+    
+    .bikegalerie img {
+        width: 100%;
+        margin-top: 10%;
+    }
+
+}
+
 
 #wandhalterung {
     background-color: darkred;
@@ -407,7 +595,7 @@ a:active {
 }
 
 .wandpic {
-    width: 80%;
+    width: 90%;
     padding-bottom: 30px;
 }
 
@@ -421,6 +609,32 @@ a:active {
  
 #wandhalterung img {
     width: 100%;
+}
+
+#wandhalterung p {
+    font-size: 18px;
+    font-weight: 100;
+}
+
+#wandhalterung a:link {
+    color: white; 
+    background-color: transparent; 
+    text-decoration: underline;
+}       
+
+#wandhalterung a:visited {
+    color: white;
+    background-color: transparent;
+  }
+  
+#wandhalterung a:hover {
+    color: blue;
+    background-color: white;
+}
+  
+#wandhalterung a:active {
+    color: white;
+    background-color: transparent;
 }
 
 #touren {
@@ -438,6 +652,11 @@ a:active {
     line-height: 50px;
     padding-top: 120px;
     padding-bottom: 50px;
+}
+
+#touren p {
+    font-size: 18px;
+    font-weight: 100;
 }
 
 .Tourenpics {
@@ -472,7 +691,7 @@ a:active {
     height: 200px;  
     background-color: red;
     margin: 10px 2%;
-    padding: 15px;
+    padding: 15px 2%;
     overflow: scroll;
 }
 
@@ -480,8 +699,30 @@ a:active {
     font-size: 18px;
     color: black;
     list-style-type: none;
-    line-height: 26px;
+    line-height: 30px;
+    padding: 5px 2%;
 }
+
+#touren a:link {
+    color: white; 
+    background-color: transparent; 
+    text-decoration: underline;
+}       
+
+#touren a:visited {
+    color: white;
+    background-color: transparent;
+  }
+  
+#touren a:hover {
+    color: blue;
+    background-color: white;
+}
+  
+#touren a:active {
+    color: white;
+    background-color: transparent;
+} 
 
 @media only screen and (max-width: 800px) {
     
@@ -535,13 +776,50 @@ a:active {
 
 #misc {
     background-color: gold;
-    height: 50px;
+    height: fit-content;
+    margin: 20px 5%;  
+}
+
+.miscbox {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#misc img {
+    width: 40%;
+    margin: 0 5% 5% 5%;
+}
+
+@media only screen and (max-width: 800px) {
+    .miscbox {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #misc img {
+        width: 90%;
+        margin: 0 5% 5% 5%;
+    }
 }
 
 #elias {
-    background-color: blue;
-    height: 50px;
+    text-align: center;
+    margin: 40px 5% 10px 5%;  
 }
+
+#elias h1 {
+    color: black;
+}
+
+@media only screen and (max-width: 800px) {
+    #elias iframe {
+        width: 90%;
+    }
+}
+
 
 #location {
     height: fit-content;
@@ -568,6 +846,8 @@ a:active {
 .map img {
     width: 100%;
 }
+
+
 
 @media only screen and (max-width: 800px) {
     #location {
